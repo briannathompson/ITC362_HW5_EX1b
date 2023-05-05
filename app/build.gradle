@@ -41,7 +41,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.fragment:fragment-ktx:1.4.1'       // 9.1 Add fragment library dependency
+    implementation 'androidx.fragment:fragment-ktx:1.4.1'
+    debugImplementation 'androidx.fragment:fragment-testing:1.5.7'
+    debugImplementation "androidx.test:monitor:1.6.0" // last answer: https://stackoverflow.com/questions/70104210/android-espresso-java-lang-noclassdeffounderror-failed-resolution-of-landroid
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
